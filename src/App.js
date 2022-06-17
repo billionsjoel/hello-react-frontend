@@ -5,15 +5,15 @@ import Greeting from './components/Greeting';
 import { fetchRandomMessage } from './app/message';
 
 const App = () => {
-	const dispatch = useDispatch();
-	useEffect(() => {
-		dispatch(fetchRandomMessage());
-	}, []);
-	return (
-		<Routes>
-			<Route path="/" element={<Greeting />} />
-		</Routes>
-	);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(fetchRandomMessage());
+  }, []);
+  return (
+    <Routes>
+      <Route path="/" element={<Greeting />} />
+    </Routes>
+  );
 };
 
 export default App;
